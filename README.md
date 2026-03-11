@@ -1,4 +1,4 @@
-Infrastructure as Code — AWS EC2 + Docker Provisioning
+# Infrastructure as Code — AWS EC2 + Docker Provisioning
 
 This repository contains Infrastructure as Code (IaC) for provisioning and configuring a container-ready server on AWS.
 
@@ -8,11 +8,11 @@ The stack uses:
 - Ansible → configuration management
 - Docker → container runtime
 
-This repository is part of a broader DevOps pipeline project where applications are deployed via CI/CD after the infrastructure is provisioned.
+> This repository is part of a broader DevOps pipeline project where applications are deployed via CI/CD after the infrastructure is provisioned.
 
 ---
 
-Architecture Overview
+## Architecture Overview
 
 The workflow follows a common DevOps pattern:
 
@@ -35,6 +35,7 @@ Once the infrastructure is ready, application deployment can be handled by a CI/
 
 Repository Structure
 
+```
 .
 ├── ansible
 │ ├── inventory.ini # Target host inventory
@@ -55,10 +56,11 @@ Repository Structure
 │
 ├── LICENSE
 └── README.md
+```
 
 ---
 
-Infrastructure Components
+## Infrastructure Components
 
 Terraform provisions the following resources:
 
@@ -73,7 +75,7 @@ The EC2 instance acts as a Docker host for running containerized applications.
 
 ---
 
-Configuration Management
+## Configuration Management
 
 Ansible is used to configure the EC2 instance after it is created.
 
@@ -88,7 +90,7 @@ This ensures the instance is ready to run containers immediately.
 
 ---
 
-Prerequisites
+## Prerequisites
 
 You need the following tools installed locally:
 
@@ -103,7 +105,7 @@ aws configure
 
 ---
 
-Usage
+## Usage
 
 1 Provision Infrastructure
 
