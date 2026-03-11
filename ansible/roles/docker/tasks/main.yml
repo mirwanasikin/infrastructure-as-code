@@ -1,0 +1,22 @@
+- name: Update system
+  dnf:
+    name: "*"
+    state: latest 
+    update_cache: true
+
+- name:
+  dnf:
+    name: docker 
+    state: present
+
+- name: Start Docker Services
+  service:
+    name: docker 
+    state: started
+    enabled: true
+
+- name: EC2 User Docker Groups
+  user:
+    name: ec2-user
+    groups: docker 
+    append: true

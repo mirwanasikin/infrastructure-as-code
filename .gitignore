@@ -1,0 +1,69 @@
+# =============================================================================
+# TERRAFORM
+# =============================================================================
+
+# Local .terraform directories (provider cache)
+**/.terraform/*
+
+# Terraform state files — NEVER commit these
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Terraform plan output
+*.tfplan
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Sensitive variable files — use *.tfvars.example instead
+*.tfvars
+*.tfvars.json
+
+# Override files (local dev overrides)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Lock file — commit this if you want to pin provider versions
+# .terraform.lock.hcl
+
+# =============================================================================
+# ANSIBLE
+# =============================================================================
+
+# Inventory file — contains EC2 IPs, keep it local
+inventory.ini
+
+# Retry files generated on playbook failure
+*.retry
+
+# Ansible Vault password file
+.vault_pass
+.vault_password
+
+# =============================================================================
+# GENERAL
+# =============================================================================
+
+# Environment variables
+.env
+.env.*
+
+# OS garbage
+.DS_Store
+Thumbs.db
+
+# Editor stuff
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
