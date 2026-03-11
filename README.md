@@ -16,6 +16,7 @@ The stack uses:
 
 The workflow follows a common DevOps pattern:
 
+```
 Terraform
 │
 ▼
@@ -30,6 +31,7 @@ Ansible
 Server ready for CI/CD deployment
 
 Once the infrastructure is ready, application deployment can be handled by a CI/CD pipeline (e.g. GitHub Actions).
+```
 
 ---
 
